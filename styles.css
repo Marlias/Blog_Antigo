@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #dad0ae;
+  color: #2a1b12;
+  background-color: #e9dfc3;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  background-color: #c8b089;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu,
+.logo {
+  padding: 10px;
+}
+
+a {
+  color: #f3efe1;
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: #e3d2ad;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #b6b09b;
+  color: #c8b089;
+}
+
+.logo_fundo {
+  color: #3c844d;
+}
+
+.topo {
+  padding: 20px;
+  background: #d7c08e;
+  border-bottom: 3px solid #b08a52;
+}
+
+.topo h1 {
+  margin: 0;
+}
+
+.topo p {
+  margin: 6px 0 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between; /*Empurra um bloco para esquerda e outro para a direita*/
+  align-items: center; /*Alinha pelo topo*/
+
+  gap: 40px;
+
+  width: 60%;
+ margin-bottom: 60px;
+}
+
+.anuncio {
+  width: 280px; /*Largura fixa*/
+  height: 280px; /*Altura fixa*/
+
+  background: #fff8e8; /*Cor de fundo*/
+  border: 2px dashed #b08a52; /*Borda pontilhada*/
+  border-radius: 16px; /*Cantos arredondados*/
+
+  display: flex; /*Flex para centralizar conteudo*/
+  justify-content: center; /*Centraliza verticalmente*/
+  align-items: center; /*Centraliza horizontalmente*/
+
+  font-weight: 600; /*Texto em destaque*/
+  color: #b08a52; /*Cor do texto s*/
+}
+
+.div-video {
+  /*Caixa que controle o tamanho do vídeo*/
+  width: 350px; /*Define o tamanho do vídeo*/
+}
+
+/*iframe do YT sempre ocupa 100% da Div*/
+.div-video iframe {
+  width: 100%; /*Preenche toda a largura da div*/
+  height: 215px; /*Altura proporcional ao video*/
+
+  border-radius: 12px; /*Cantos arredondados*/
+  border: none;
+}
+
+/*Ajustes para celular e telas nebires*/
+@media (max-width: 768px) {
+  /*Empilha os elementos um embaixo do outro*/
+  .container1 {
+    flex-direction: column; /*Muda de linha para coluna*/
+    align-items: center; /*Centraliza os blocos*/
+  }
+
+  /*Ajuda largura no mobile*/
+  .anuncio,
+  .div-video {
+    width: 100%;
+    max-width: 360px; /*Evita ficar largo demais*/
+  }
+}
+
+.layout {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.blog,
+.passarinhos {
+  background: #fff8e8;
+  border: 2px solid #c8b089;
+  border-radius: 16px;
+  padding: 24px;
+  width: 360px;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.central {
+  display: flex;            /* Faz passarinhos e blog ficarem lado a lado */
+  justify-content: center;  /* Centraliza o conjunto */
+  gap: 40px;                /* Espaço entre eles */
+}
+
+.post {
+  background: #ffffff;
+  border: 1px solid #e3d2ad;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.post h3 {
+  margin-top: 0;
+}
+
+.bird {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #e3d2ad;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 12px;
+
+  cursor: pointer;
+}
+
+.birds {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.bird-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #f3efe1;
+  border: 1px solid #e3d2ad;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bird-btn:hover {
+  background: #f6edd7;
+}
+
+.bird-img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.bird-name {
+  font-weight: bold;
+  color: #b6b09b;
+}
+.name {
+  font-weight: bold;
+}
+
+.dica {
+  display: block;
+  margin-top: 14px;
+  font-size: 12px;
+  opacity: 0.7;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Modoes antigos e historias da vida no campo</title>
+  </head>
+
+  <body>
+    <!-- Topo do Site -->
+    <div class="header">
+      <div class="logo">
+        <h1>🌾 Rádio da <span class="logo_fundo">Fazenda</span></h1>
+      </div>
+
+      <div class="menu">
+        <a href="#">Pagina Inicial</a>
+        <a href="#">Receitas</a>
+        <a href="#">Blog</a>
+        <a href="#">Fale Conosco</a>
+        <a href="#fim">Ir ao fim</a>
+      </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main class="layout">
+      <!-- ANÚNCIO + VÍDEO (PARTE DE CIMA) -->
+      <div class="container1">
+        <!-- Bloco de anúncio -->
+        <div class="anuncio">
+          <p>Anúncio</p>
+        </div>
+
+        <!-- Bloco do vídeo -->
+        <div class="div-video">
+          <iframe
+            src="https://www.youtube.com/embed/4dAUT96KmeU"
+            title="Rádio da Fazenda"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <!-- PASSARINHOS + BLOG (PARTE DE BAIXO) -->
+      <div class="central">
+        <aside class="passarinhos">
+          <h2>🐦 Passarinhos da Região</h2>
+          <div class="birds" id="birdsList"></div>
+          <small class="dica">Passa o mouse nos passarinhos</small>
+        </aside>
+
+        <section class="blog">
+          <h2>📜 Blog da Fazenda</h2>
+
+          <article class="post">
+            <h3>Dia de chuva e café coado</h3>
+            <p>
+              O cheiro da terra molhada tomou conta da fazenda. O café ficou
+              pronto cedo e a conversa foi longa.
+            </p>
+          </article>
+
+          <article class="post">
+            <h3 id="fim">Rotina no curral</h3>
+            <p>
+              O dia começou cedo, com ordenha, trato dos animais e organização
+              do celeiro.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
