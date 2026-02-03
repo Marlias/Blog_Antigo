@@ -59,4 +59,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
     birdsList.appendChild(button);
   });
+  const imagem = document.getElementById("imgAnuncio");
+
+  const imagens = [
+    "Anuncio/Fosforo.jpg",
+    "Anuncio/Saul.jpg"
+  ];
+
+  let indiceAtual = 0;
+
+  function trocarImagem(){
+    indiceAtual = indiceAtual === 0 ? 1 : 0;
+
+    imagem.src = imagens[indiceAtual];
+  }
+
+  setInterval(trocarImagem, 3000);
 });

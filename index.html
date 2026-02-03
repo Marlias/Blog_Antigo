@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Diz ao navegador que isso e html5 ent isso n muda-->
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Modoes antigos e historias da vida no campo</title>
+  <head> <!--Cabeça do site-->
+    <meta charset="UTF-8"/> <!--Charset permite acentos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!--Faz o site se adaptar a tela do celular-->
+    <link rel="stylesheet" href="styles.css"/> <!--Conecta o CSS-->
+    <title>Modoes antigos e historias da vida no campo</title> <!--Nome da aba do navegador-->
   </head>
 
-  <body>
-    <!-- Topo do Site -->
+  <body> <!--Topo do site-->
     <div class="header">
       <div class="logo">
         <h1>🌾 Rádio da <span class="logo_fundo">Fazenda</span></h1>
       </div>
 
-      <div class="menu">
+      <div class="menu"> <!--Menu-->
         <a href="#">Pagina Inicial</a>
         <a href="#">Receitas</a>
         <a href="#">Blog</a>
@@ -29,7 +28,10 @@
       <div class="container1">
         <!-- Bloco de anúncio -->
         <div class="anuncio">
-          <p>Anúncio</p>
+          <img
+          id="imgAnuncio"
+          src="Anuncio/Fosforo.jpg"
+          alt="Anuncio Saul Godman">
         </div>
 
         <!-- Bloco do vídeo -->
@@ -46,13 +48,13 @@
 
       <!-- PASSARINHOS + BLOG (PARTE DE BAIXO) -->
       <div class="central">
-        <aside class="passarinhos">
+        <aside class="passarinhos"> <!--Bloco onde consegue encaixar na página sem mexer no conteudo-->
           <h2>🐦 Passarinhos da Região</h2>
           <div class="birds" id="birdsList"></div>
           <small class="dica">Passa o mouse nos passarinhos</small>
         </aside>
 
-        <section class="blog">
+        <section class="blog"> <!--Conteudo principal com texto-->
           <h2>📜 Blog da Fazenda</h2>
 
           <article class="post">

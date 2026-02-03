@@ -76,19 +76,16 @@ a:hover {
 }
 
 .anuncio {
-  width: 280px; /*Largura fixa*/
-  height: 280px; /*Altura fixa*/
+  width: 300px; /*Largura fixa*/
+  max-width: 100%;
+  border-radius: 16px;
+  overflow: hidden; /*corta tudo que passar da borda.*/
+}
 
-  background: #fff8e8; /*Cor de fundo*/
-  border: 2px dashed #b08a52; /*Borda pontilhada*/
-  border-radius: 16px; /*Cantos arredondados*/
-
-  display: flex; /*Flex para centralizar conteudo*/
-  justify-content: center; /*Centraliza verticalmente*/
-  align-items: center; /*Centraliza horizontalmente*/
-
-  font-weight: 600; /*Texto em destaque*/
-  color: #b08a52; /*Cor do texto s*/
+.anuncio img{
+width: 100%;
+height: auto;
+display: block;
 }
 
 .div-video {
